@@ -9,6 +9,17 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
 
+    - name: Setup node
+      uses: actions/setup-node@v3
+      with:
+        node-version-file: '.nvmrc'
+        cache: 'npm'
+
+    - name: 🔨 Build Project
+      run: |
+        npm install
+        npm run build
+
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
@@ -17,8 +28,4 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         protocol: ftps
         security: strict
-        exclude: |
-          **/.git*
-          **/.git*/**
-          .editorconfig
-          README.md
+        local-dir: ./dist/

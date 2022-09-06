@@ -1,0 +1,32 @@
+{
+  "name": "kollektiv.laubengang.org",
+  "private": true,
+  "version": "1.0.0",
+  "description": "website for kollektiv laubengang",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kollektiv-laubengang/kollektiv.laubengang.org.git"
+  },
+  "author": "",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/kollektiv-laubengang/kollektiv.laubengang.org/issues"
+  },
+  "homepage": "http://kollektiv.laubengang.org/",
+  "devDependencies": {
+    "@types/maplibre-gl": "^1.14.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0"
+  },
+  "dependencies": {
+    "maplibre-gl": "^2.4.0",
+    "modern-normalize": "^1.1.0"
+  }
+}

@@ -1,0 +1,52 @@
+@import 'modern-normalize';
+@import 'maplibre-gl';
+
+@font-face {
+  font-family: 'Passion One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/passion-one-v16-latin-regular.woff2') format('woff2'),
+       url('./fonts/passion-one-v16-latin-regular.woff') format('woff');
+}
+
+html {
+  font-size: clamp(100%, 1rem + 2vw, 24px);
+}
+
+#map {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Passion One', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  padding: 3rem;
+  color: #222;
+}
+
+.headline {
+  display: block;
+  font-size: 2rem;
+  max-width: 5ex;
+  word-break: break-all;
+  line-height: 0.7;
+}
+
+.headline,
+.tagline {
+  position: relative;
+  z-index: 1;
+}
