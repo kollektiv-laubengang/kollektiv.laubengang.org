@@ -2,10 +2,8 @@
 
 ## Development
 
-If you want easy dev server, just use browser sync
-
 ```bash
-npx browser-sync -w
+npm run dev
 ```
 
 ## Deployment
